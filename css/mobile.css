@@ -1,0 +1,62 @@
+div.item-1 {
+    width: 99%;
+}
+
+.flex.menu {
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu > a {
+    margin-left: 0;
+}
+
+ul.row {
+    justify-content: center;
+}
+
+ul.menu2 {
+    justify-content: center;
+}
+
+ul.menu2 > li > a {
+    text-align: center;
+}
+
+.flex-nav {
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form input {
+    width: 85%;
+}
+
+.form button {
+    width: 10%;
+}
+
+.row-4 {
+    flex-direction: column;
+}
+
+div.content-2 {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.row-5 {
+    flex-direction: column;
+}
+
+ul.content-2-1 > li, ul.menu2 > li, ul.row > li {
+    max-width: 100%;
+}
+
+div.content-3 {
+    margin: 0 auto;
+}
