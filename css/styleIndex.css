@@ -155,7 +155,6 @@ ul.menu2 > li > a:hover {
     color: #ffffff;
     text-shadow: 1px 0 2px #ff0000;
     border-color: #ff0000;
-    
 }
 
 .content button {
@@ -185,16 +184,106 @@ ul.menu2 > li > a:hover {
     text-decoration: none;
     background: #ffffff;
     padding: 3px;
-    border: 0.5px solid black;
+    border: 0.5px solid #000000;
     border-radius: 35%;
     outline: none;
     margin: 0 5px;
 }
 
+section.bg {
+    padding-top: 40px;
+    background-color: #2e2b2b;
+}
+
+.button {
+    width: 95%;
+    padding: 10px 20px;
+    font-size: 23px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(#272727, #808080);
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px #28282c;
+    border: 1px solid #272727;;
+    font-weight: bold;
+    margin: 0 auto 40px;
+}
+
+div.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.slides {
+    width: 95%;
+    margin: auto;
+    min-height: 300px;
+    border-radius: 10px;
+    border: 2px solid #808080;
+    background-color: #28282c;
+}
+
+div.slide {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+div.slide > div:first-child {
+    width: 50%;
+}
+
+div.slide > div:last-child {
+    width: 50%;
+    text-align: center;
+}
+
+div.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div.slide ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.slide li {
+    min-height: 40px;
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: 500px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 15px;
+}
+
+button.next {
+    right: 15px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 .bg-1 {
     background-color: #2e2b2b;
     margin: 0;
-    padding: 0;
+    padding: 40px 0 0;
     overflow: hidden;
 }
 
@@ -210,7 +299,7 @@ div.items {
 }
 
 div.item-1 {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 22%;
     background-color: #1d1d1d;
     border: 1px solid #808080;
@@ -251,7 +340,7 @@ div.label {
 div.item-2 img {
     width: 100%;
     height: 350px;
-    transition: transform ease-in 1s;
+    transition: transform ease-in .7s;
 }
 
 div.item-2 img:hover {

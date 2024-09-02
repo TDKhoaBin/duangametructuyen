@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>GameVuiVN</title>
 </head>
 <body>
@@ -42,9 +46,9 @@
             <div class="flex menu">
                 <a href="#"><h3>Game Vui VN</h3></a>
                 <ul class="row">
-                    <li><a href="#"><i class="fa-solid fa-user"></i> Đăng Nhập</a></li>
-                    <li><a href="#">Đăng Ký</a></li>
-                    <li><a href="#">Quảng cáo</a></li>
+                    <li><a href="#"><i class="fas fa-sign-in-alt"></i>   Đăng Nhập</a></li>
+                    <li><a href="#"><i class="fas fa-user-plus"></i> Đăng Ký</a></li>
+                    <li><a href="#"><i class="fas fa-bullhorn"></i> Quảng cáo</a></li>
                 </ul>
             </div>
         </div>
@@ -53,10 +57,10 @@
         <div class="flex-nav nav-bg">
             <ul class="menu2">
                 <li><a href="#"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
-                <li><a href="#">Về Chúng Tôi</a></li>
-                <li><a href="#">Hướng Dẫn</a></li>
+                <li><a href="#"><i class="fa-regular fa-address-card"></i> Về Chúng Tôi</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i>  Hướng Dẫn</a></li>
                 <li><a href="#"><i class="fa-solid fa-video"></i> Video</a></li>
-                <li><a href="#">Xếp Hạng</a></li>
+                <li><a href="#"><i class="fa-solid fa-ranking-star"></i> Xếp Hạng</a></li>
             </ul>
             <div class="form">
                 <input type="text" placeholder="Nhập Tên Game..."/>
@@ -64,10 +68,62 @@
             </div>
         </div>
     </nav>
+    <section class="bg">
+        <div class="button">
+            <h4>HOT GAME</h4>
+        </div>        
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <div>
+                        <img src="images/slide1.jpg" alt="Ảnh slide">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Tên: Sky</li>
+                            <li>Thể loại: Phiêu lưu, Khám phá</li>
+                            <li>Mô tả: Sky là một game phiêu lưu đầy sáng tạo, nơi người chơi khám phá những vương quốc huyền bí trên bầu trời, tương tác với cộng đồng người chơi và cùng nhau khám phá những bí ẩn được giấu kín.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="images/slide2.jpg" alt="Ảnh slide">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Tên: Terraria</li>
+                            <li>Thể loại: Hành động, Phiêu lưu, Thế giới mở</li>
+                            <li>Mô tả: Terraria là một trò chơi sandbox kết hợp giữa yếu tố phiêu lưu và hành động, cho phép người chơi khám phá, xây dựng và chiến đấu trong một thế giới mở đầy màu sắc và sáng tạo.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="images/slide3.jpg" alt="Ảnh slide">
+                    </div>
+                    <div>
+                        <ul>
+                            <ul>
+                                <li>Tên: Toca Life Hospital</li>
+                                <li>Thể loại: Mô phỏng, Giáo dục</li>
+                                <li>Mô tả: Toca Life Hospital là một trò chơi mô phỏng giáo dục, nơi người chơi có thể khám phá và trải nghiệm cuộc sống trong bệnh viện, từ việc chăm sóc bệnh nhân đến khám phá các hoạt động hàng ngày trong môi trường y tế.</li>
+                            </ul>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
     <section class="bg-1">
+        <div class="button">
+            <h4>CÁC GAME PHỔ BIẾN</h4>
+        </div>     
         <div class="container-1">
             <div class="items">
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game1.jpg" alt="ảnh game">
@@ -79,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game2.jpg" alt="ảnh game">
@@ -92,7 +148,7 @@
                         <div class="label">Mới</div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game3.jpg" alt="ảnh game">
@@ -104,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game4.jpg" alt="ảnh game">
@@ -116,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game11.jpg" alt="ảnh game">
@@ -129,7 +185,7 @@
                         <div class="label">Mới</div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game12.jpg" alt="ảnh game">
@@ -141,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game13.jpg" alt="ảnh game">
@@ -154,7 +210,7 @@
                         <div class="label">Mới</div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game14.jpg" alt="ảnh game">
@@ -166,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game15.jpg" alt="ảnh game">
@@ -178,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game16.jpg" alt="ảnh game">
@@ -190,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game17.jpg" alt="ảnh game">
@@ -203,7 +259,7 @@
                         <div class="label">Mới</div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game18.jpg" alt="ảnh game">
@@ -215,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game19.jpg" alt="ảnh game">
@@ -227,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game20.jpg" alt="ảnh game">
@@ -240,7 +296,7 @@
                         <div class="label">Mới</div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game21.jpg" alt="ảnh game">
@@ -252,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game22.jpg" alt="ảnh game">
@@ -264,7 +320,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game23.jpg" alt="ảnh game">
@@ -277,7 +333,7 @@
                         <div class="label">Mới</div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game24.jpg" alt="ảnh game">
@@ -289,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game25.jpg" alt="ảnh game">
@@ -301,7 +357,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game26.jpg" alt="ảnh game">
@@ -314,7 +370,7 @@
                         <div class="label">Mới</div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game27.jpg" alt="ảnh game">
@@ -326,7 +382,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game28.jpg" alt="ảnh game">
@@ -338,7 +394,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game29.jpg" alt="ảnh game">
@@ -350,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-1">
+                <div class="item-1 animate__animated animate__flipInY">
                     <div class="item-2">
                         <div>
                             <img src="images/game30.jpg" alt="ảnh game">
@@ -365,7 +421,7 @@
             </div>
         </div>
         <div class="container-1">
-            <div class="bg-3">
+            <div class="bg-3 animate__animated animate__backInUp">
                 <div class="her">
                     <h1>Game sắp cập nhật</h1>
                 </div>
@@ -407,7 +463,7 @@
     <section class="bg-1">
         <div class="container-2">
             <div class="row-4">
-                <div class="content-2">
+                <div class="content-2 animate__animated animate__jackInTheBox">
                     <h1>Thể loại game</h1>
                     <ul class="content-2-1">
                         <li><a href="#"><img src="images/icon/icon8.png" alt="icon Con Gái">   Con gái</a></li>
@@ -420,10 +476,10 @@
                         <li><a href="#"><img src="images/icon/icon2.png" alt="icon 2 Người">   2 Người</a></li>
                     </ul>
                 </div>
-                <div class="content-3">
+                <div class="content-3 animate__animated animate__jackInTheBox">
                     <h1>Tin Tức Game</h1>
                     <div class="row-5">
-                        <div class="item-1">
+                        <div class="item-1 animate__animated animate__flipInY">
                             <div class="item-2">
                                 <div>
                                     <img src="images/game8.jpg" alt="ảnh game">
@@ -435,7 +491,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-1">
+                        <div class="item-1 animate__animated animate__flipInY">
                             <div class="item-2">
                                 <div>
                                     <img src="images/game9.jpg" alt="ảnh game">
@@ -447,7 +503,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-1">
+                        <div class="item-1 animate__animated animate__flipInY">
                             <div class="item-2">
                                 <div>
                                     <img src="images/game10.jpg" alt="ảnh game">
@@ -464,21 +520,21 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="animate__animated animate__backInRight">
         <div class="row-6">
             <div class="for-1">
                 <h1>Thông tin thêm</h1>
                 <ul class="row-7">
-                    <li><a href="#">Đấu Trường</a></li>
-                    <li><a href="#">Quảng cáo</a></li>
+                    <li><a href="#"><i class="fas fa-trophy"></i> Đấu Trường</a></li>
+                    <li><a href="#"><i class="fas fa-bullhorn"></i> Quảng cáo</a></li>
                 </ul>
             </div>
             <div class="for-1">
                 <h1>Về chúng tôi</h1>
                 <ul class="row-7">
                     <li><a href="#"><i class="fa-solid fa-comment"></i> Giới thiệu</a></li>
-                    <li><a href="#">Điều khoản</a></li>
-                    <li><a href="#">Bảo mật</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> Điều khoản</a></li>
+                    <li><a href="#"><i class="fas fa-lock"></i> Bảo mật</a></li>
                     <li><a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
                 </ul>
             </div>
