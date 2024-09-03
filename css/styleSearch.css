@@ -5,11 +5,11 @@
 }
 
 body {
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo1.png);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 120px;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: rgb(46, 44, 44);
 }
 
 .container {
@@ -47,6 +47,7 @@ h1 {
 }
 
 .hot-searches h2 {
+    color: rgb(255, 0, 0);
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -67,6 +68,7 @@ h1 {
 .search-tags span:hover{
     background-color: red;
     color: black;
+    font-weight: bold;
 }
 
 .games {
@@ -86,7 +88,13 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.2s ease;
 }
+.game-card img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 
 .advertisement {
     margin: 20px 0;
@@ -111,10 +119,25 @@ h1 {
     flex-wrap: wrap;
     gap: 10px;
 }
+.game-item {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.game-item img:hover {
+    transform: scale(1.05);
+}
 
 .game-item {
     flex: 1 1 calc(20% - 10px);
-    background-color: white;
+    background-color:grey;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -126,12 +149,50 @@ h1 {
     border-radius: 10px;
 }
 
-footer {
-    margin-top: 20px;
-    text-align: center;
+
+
+.row-6 {
+    background-color: #080707;
+    display: flex;
+    justify-content: space-around;
 }
 
-footer p {
-    font-size: 14px;
-    color: #666;
+.for-1 h1 {
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+ul.row-7 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.row-7 > li {
+    max-width: 200px;
+    padding: 10px 0;
+}
+
+ul.row-7 > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+ul.row-7 > li > a:hover {
+    color: lightgreen;
+}
+
+@media screen and (max-width: 1600px) {
+    div.item-1 {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    div.item-1 {
+        width: 49%;
+    }
 }

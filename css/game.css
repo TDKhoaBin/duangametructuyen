@@ -1,5 +1,5 @@
 .flex {
-        display: flex;
+    display: flex;
     justify-content: space-around;
 }
 
@@ -447,19 +447,19 @@ div.item-2 button {
 .content-1 {
     text-align: center;
 }
-.content-1 p {
+.content-1 p, .box-3 p {
     font-size: 26px;
     color: #ff0000;
     padding-left: 10px;
 }
-.content-1 h3 {
+.content-1 h3, .box-3 h1 {
     font-size: 30px;
     text-shadow: 1px 0 2px #ff0000;
     color: #ffffff;
     font-weight: 500;
     padding-left: 9px;
 }
-.content-1 button {
+.content-1 button, .box-3 button {
     background-color: #ff0000;
     color: #ffffff;
     border-radius: 3px;
@@ -592,4 +592,100 @@ ul.row-7 > li > a:hover {
     div.item-1 {
         width: 49%;
     }
+}
+
+
+
+.main-game
+{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 7rem;
+    position: relative;
+    background: url('../images/slide1.jpg');
+    background-size: cover;
+
+}
+
+.main-screen
+{
+    content: ' ';
+    margin: 1rem 0;
+    /* padding:15rem; */
+
+}
+
+.points
+{
+    top:0%;
+    left:30%;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.addBtn
+{
+    padding: 0.5rem 0.7rem;
+    border-radius: 20%;
+    top:0;
+    left:50%;
+}
+
+.point-user
+{
+    position: relative;
+    top: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: fit-content;
+
+}
+
+.question, .secretNum
+{
+    text-align: center;
+    color:black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.containerInput
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.containerInput div
+{
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.payTaskbar
+{
+    position: relative;
+    left:-1%;
+}
+
+.resetBtn
+{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+footer{
+    margin-top: 1rem;
 }

@@ -237,6 +237,14 @@ form button {
   position: absolute;
   left: 0.87em;
 }
+.mouth, .mouth:before {
+  height: 0.75em;
+  width: 0.93em;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0.18em #3f3554;
+}
 
 .hand-l, .hand-r {
   background-color: #3f3554;

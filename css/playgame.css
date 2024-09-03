@@ -12,23 +12,25 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: grey;
 }
 
 header {
     padding: 20px;
-    background-color: white;
+    background-color: black;
     border-bottom: 1px solid #ccc;
 }
 
 .logo img {
-    width: 240px;
+    width: 120px;
 }
-.search input{
+
+.search-bar input{
     width: 360px;
     height: 30px;
 }
-.search button{
+
+.search-bar button{
     height: 30px;
     width: 30px;
 }
@@ -67,7 +69,23 @@ nav button {
     height: auto;
 }
 
+.play {
+    font-size: 33px;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+
+.play > a {
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px; 
+}
+
 .ads {
+    margin-top: 100px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -75,15 +93,22 @@ nav button {
 }
 
 .ads img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 10px;
+    margin-left: 20px;
+}
+.ads a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin-left: 20px;
 }
 
 /* Phần trò chơi liên quan */
 .related-games {
     padding: 20px;
-    background-color: white;
+    background-color: black;
     margin: 20px 0;
     border-radius: 10px;
 }
@@ -110,12 +135,49 @@ nav button {
 .game-grid img:hover {
     transform: scale(1.05);
 }
-footer {
-    margin-top: 20px;
-    text-align: center;
+
+.row-6 {
+    background-color: #080707;
+    display: flex;
+    justify-content: space-around;
 }
 
-footer p {
-    font-size: 14px;
-    color: #666;
+.for-1 h1 {
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+ul.row-7 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.row-7 > li {
+    max-width: 200px;
+    padding: 10px 0;
+}
+
+ul.row-7 > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+ul.row-7 > li > a:hover {
+    color: lightgreen;
+}
+
+@media screen and (max-width: 1600px) {
+    div.item-1 {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    div.item-1 {
+        width: 49%;
+    }
 }

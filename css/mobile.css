@@ -60,3 +60,20 @@ ul.content-2-1 > li, ul.menu2 > li, ul.row > li {
 div.content-3 {
     margin: 0 auto;
 }
+
+div.box-1 {
+    width: 100%;
+}
+
+div.bg-3 > div.row-3 {
+    flex-direction: column;
+}
+
+div.box-1 > div.row-3 {
+    justify-content: center;
+}
+
+div.content-1 {
+    font-size: 14px;
+}
+
