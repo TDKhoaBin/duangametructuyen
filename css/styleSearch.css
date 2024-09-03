@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+header button{
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff69b4;
+}
+
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hot-searches {
+    margin: 20px 0;
+}
+
+.hot-searches h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.search-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-tags span {
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.search-tags span:hover{
+    background-color: red;
+    color: black;
+}
+
+.games {
+    display: flex;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.advertisement {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.advertisement p {
+    background-color: yellow;
+    padding: 15px;
+    font-weight: bold;
+}
+.hot-games {
+    margin: 20px 0;
+}
+
+.hot-games h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.game-item {
+    flex: 1 1 calc(20% - 10px);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.game-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
