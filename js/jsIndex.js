@@ -1,37 +1,75 @@
-// Chờ cho trang web tải xong
 window.onload = function() {
-    var slides = document.querySelectorAll(".slide"); // Lấy tất cả các slide
-    var currentSlide = 0; // Bắt đầu với slide đầu tiên
+    var slides = document.querySelectorAll(".slide");
+    var currentSlide = 0;
 
-    // Hàm để hiển thị slide
     function showSlide(index) {
-        for (var i = 0; i < slides.length; i++) { 
+        for (var i = 0; i < slides.length; i++) {
             if (i === index) {
-                slides[i].style.display = "flex"; // Hiển thị slide hiện tại
+                slides[i].style.display = "flex";
             } else {
-                slides[i].style.display = "none"; // Ẩn các slide khác
+                slides[i].style.display = "none";
             }
         }
     }
 
-    // Sự kiện cho nút "prev"
-    document.querySelector(".prev").onclick = function() {
-        currentSlide--; // Giảm chỉ số slide hiện tại
-        if (currentSlide < 0) {
-            currentSlide = slides.length - 1; // Nếu vượt quá slide đầu, quay về slide cuối
-        }
-        showSlide(currentSlide); // Hiển thị slide mới
-    };
-
-    // Sự kiện cho nút "next"
-    document.querySelector(".next").onclick = function() {
-        currentSlide++; // Tăng chỉ số slide hiện tại
+    function nextSlide() {
+        currentSlide++;
         if (currentSlide >= slides.length) {
-            currentSlide = 0; // Nếu vượt quá slide cuối, quay về slide đầu
+            currentSlide = 0; 
         }
-        showSlide(currentSlide); // Hiển thị slide mới
+        showSlide(currentSlide); 
+    }
+
+    document.querySelector(".prev").onclick = function() {
+        currentSlide--; 
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+        showSlide(currentSlide);
     };
 
-    // Hiển thị slide đầu tiên khi trang được tải xong
+    document.querySelector(".next").onclick = nextSlide;
+
+    setInterval(nextSlide, 3000);
+
     showSlide(currentSlide);
+
+    // Hàm đếm ngược và hiển thị thời gian
+    function startCountdown(duration, elementId) {
+        var countdownElement = document.getElementById(elementId);
+        var targetTime = new Date().getTime() + duration * 60 * 60 * 1000; // chuyển đổi giờ sang milliseconds
+
+        function updateCountdown() {
+            var now = new Date().getTime();
+            var timeRemaining = targetTime - now;
+
+            var days =Math.floor((timeRemaining / (1000 * 60 * 60 * 24) % 7));
+            var hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Thêm số 0 trước giờ, phút, giây nếu nhỏ hơn 10
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            countdownElement.innerText = `${days} ngày ${hours}:${minutes}:${seconds}`;
+
+            // Kiểm tra nếu thời gian đã hết
+            if (timeRemaining < 0) {
+                clearInterval(timer); // Dừng đếm ngược
+                countdownElement.innerText = "Đã cập nhật!";
+            }
+        }   
+
+        var timer = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Cập nhật ngay lập tức khi trang tải
+    }
+
+    // Bắt đầu đếm ngược cho từng game
+    startCountdown(24 * 7, "countdown1"); // 1 tuần = 7 ngày * 24 giờ
+    startCountdown(2 * 3, "countdown2"); // 3 ngày * 24 giờ
+    startCountdown(14 * 5, "countdown3"); // 5 ngày * 24 giờ
+
 };
+
