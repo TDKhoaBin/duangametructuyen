@@ -30,7 +30,7 @@ let normalHandStyle = () => {
         transform: rotate(0deg)
     `;
 };
-//When clicked on username input
+
 usernameRef.addEventListener("focus", () => {
   eyeL.style.cssText = `
     left: 0.75em;
@@ -42,23 +42,23 @@ usernameRef.addEventListener("focus", () => {
   `;
   normalHandStyle();
 });
-//When clicked on password input
+
 passwordRef.addEventListener("focus", () => {
   handL.style.cssText = `
         height: 6.56em;
-        top: 3.87em;
+        top: 3em;
         left: 11.75em;
         transform: rotate(-155deg);    
     `;
   handR.style.cssText = `
     height: 6.56em;
-    top: 3.87em;
+    top: 3em;
     right: 11.75em;
     transform: rotate(155deg);
   `;
   normalEyeStyle();
 });
-//When clicked outside username and password input
+
 document.addEventListener("click", (e) => {
   let clickedElem = e.target;
   if (clickedElem != usernameRef && clickedElem != passwordRef) {

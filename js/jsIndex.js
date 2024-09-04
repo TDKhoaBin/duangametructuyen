@@ -43,7 +43,7 @@ window.onload = function() {
             var now = new Date().getTime();
             var timeRemaining = targetTime - now;
 
-            var days =Math.floor((timeRemaining / (1000 * 60 * 60 * 24) % 7));
+            var days = Math.floor((timeRemaining / (1000 * 60 * 60 * 24) % 7));
             var hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
             var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
